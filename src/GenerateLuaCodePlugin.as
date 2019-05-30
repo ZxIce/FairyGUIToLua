@@ -1,4 +1,6 @@
 package {
+import com.adobe.utils.StringUtil;
+
 import fairygui.editor.plugin.ICallback;
 import fairygui.editor.plugin.IFairyGUIEditor;
 import fairygui.editor.plugin.IPublishData;
@@ -11,6 +13,8 @@ import fairygui.editor.utils.UtilsStr;
 import flash.filesystem.File;
 import flash.filesystem.FileMode;
 import flash.filesystem.FileStream;
+
+import mx.utils.StringUtil;
 
 public final class GenerateLuaCodePlugin implements IPublishHandler {
     public static const FILE_MARK:String = "--This is an automatically generated class by FairyGUI. Please do not modify it.";
@@ -160,7 +164,7 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
         var transitionIndex:int = 0;
 
         for each(var classInfo:Object in sortedClasses) {
-            className = prefix + classInfo.className;
+            className = /*prefix +*/ classInfo.className;
             classContext = param1["Component"];
             classContent = [];
             childIndex = 0;
@@ -215,6 +219,7 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
                  var str:String  = WriteOnClickFunc(_memberInfo);
                 classContext = classContext + str;
             }
+            classContext = classContext + "--\t<CODE-USERAREA>{user_area}\n" + "--\t</CODE-USERAREA>{user_area}\n";
             /*binderRequire.push("require('"+ className +"')")
             binderContent.push("fgui.register_extension(" + className + ".URL, " + className + ");");*/
 
@@ -233,7 +238,11 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
     private function WriteOnClickFunc(_memberInfo:Object):String{
         var str:String = "";
         if (_memberInfo.type == "GComponent")  {
-            str = str + "function " + _memberInfo.name + "OnClickCallBack(Self)\r\nend\r\n\r\n"
+            var funcName:String = _memberInfo.name + "OnClickCallBack";
+            str = str + "function " + funcName+"(Self)\r\n" +
+                    "-- <CODE-GENERATE>{" + funcName + "}\r\n" +
+                    "-- </CODE-GENERATE>{" + funcName + "}\r\n" +
+                    "end\r\n\r\n"
         }
         return str;
     }
