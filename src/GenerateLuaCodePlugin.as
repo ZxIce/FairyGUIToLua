@@ -205,15 +205,16 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
                         else {
                             classContent.push("\t" + memberName + " = UIHelper.GetChild(self.unityObject," + childIndex + ");");
                             if (memberInfo.type == "GComponent")  {
-                                classContent.push("\t" + "UIHelper.BindOnClickEvent("+memberName+",function() "+ memberInfo.name + "OnClickCallBack(Self) end)");
+                                classContent.push("\t" + "UIHelper.BindOnClickEvent("+memberName+",function() "+ memberInfo.name + "OnClickCallBack(self) end)");
                             }
                         }
                         childIndex++;
                     }
                 }
             }
+            classContent.push("--\t<CODE-USERAREA>{OnOpen}\n" + "--\t</CODE-USERAREA>{OnOpen})\n")
             classContext = classContext.replace("{content}", classContent.join("\r\n"));
-            classContext = classContext + "\r\n\r\n"
+            classContext = classContext + "\r\n\r\n";
             for each(var _memberInfo:Object in classInfo.members) {
 
                  var str:String  = WriteOnClickFunc(_memberInfo);
@@ -239,7 +240,7 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
         var str:String = "";
         if (_memberInfo.type == "GComponent")  {
             var funcName:String = _memberInfo.name + "OnClickCallBack";
-            str = str + "function " + funcName+"(Self)\r\n" +
+            str = str + "function " + funcName+"(self)\r\n" +
                     "-- <CODE-GENERATE>{" + funcName + "}\r\n" +
                     "-- </CODE-GENERATE>{" + funcName + "}\r\n" +
                     "end\r\n\r\n"
