@@ -212,7 +212,7 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
                     }
                 }
             }
-            classContent.push("--\t<CODE-USERAREA>{OnOpen}\n" + "--\t</CODE-USERAREA>{OnOpen})\n")
+            classContent.push("--\t<CODE-GENERATE>{OnOpen}\n" + "--\t</CODE-GENERATE>{OnOpen}\n")
             classContext = classContext.replace("{content}", classContent.join("\r\n"));
             classContext = classContext + "\r\n\r\n";
             for each(var _memberInfo:Object in classInfo.members) {
