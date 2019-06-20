@@ -185,7 +185,7 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
                             classContent.push("\t" + memberName + " = self:GetController(\"" + memberInfo.name + "\");");
                         }
                         else {
-                            classContent.push("\t" + memberName + " = self:GetControllerAt(" + controllerIndex + ");");
+                            classContent.push("\t" + memberName + " = UIHelper.GetController(self.unityObject," + controllerIndex + ");");
                         }
                         controllerIndex++;
                     }
