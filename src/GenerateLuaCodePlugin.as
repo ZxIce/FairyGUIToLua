@@ -241,8 +241,8 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
         if (_memberInfo.type == "GComponent")  {
             var funcName:String = _memberInfo.name + "OnClickCallBack";
             str = str + "function " + funcName+"(self)\r\n" +
-                    "-- <CODE-GENERATE>{" + funcName + "}\r\n" +
-                    "-- </CODE-GENERATE>{" + funcName + "}\r\n" +
+                    "--\t<CODE-GENERATE>{" + funcName + "}\r\n" +
+                    "--\t</CODE-GENERATE>{" + funcName + "}\r\n" +
                     "end\r\n\r\n"
         }
         return str;
