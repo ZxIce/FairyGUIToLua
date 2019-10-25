@@ -3,13 +3,13 @@
   <component name="FlexBuildConfigurationManager" active="FairyGUIToLua">
     <configurations>
       <configuration name="FairyGUIToLua" target-platform="Desktop" output-type="Library" output-file="FairyGUIToLua.swc" output-folder="$MODULE_DIR$/out/production/FairyGUIToLua">
-        <dependencies target-player="11.1">
+        <dependencies target-player="11.1" framework-linkage="External">
           <entries>
             <entry library-id="7caeab9b-4889-4d06-b3bf-cd48d040ac28">
               <dependency linkage="External" />
             </entry>
           </entries>
-          <sdk name="4.6.0" />
+          <sdk name="flex_sdk_4.6" />
         </dependencies>
         <compiler-options />
         <packaging-air-desktop />
@@ -24,7 +24,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="4.6.0" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="jdk" jdkName="flex_sdk_4.6" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" exported="">
       <library type="flex">

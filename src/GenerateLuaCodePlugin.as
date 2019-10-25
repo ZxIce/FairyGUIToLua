@@ -70,7 +70,8 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
         var project:Object = publishData['_project'];
         this.projectSettings = project.settingsCenter.publish;
         try {
-            path = this.projectSettings.codePath;
+            //path = this.projectSettings.codePath;
+            path = _editor.project.basePath+"/Scripts";
             path = UtilsStr.formatStringByName(path, project.customProperties);
             targetFolder = new File(project.basePath).resolvePath(path);
             if (!targetFolder.exists) {
@@ -125,7 +126,7 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
         var _loc2_:File = new File(project.basePath + "/template/" + param1);
         if (_loc2_.exists) {
             _loc3_ = this.loadTemplate2(_loc2_);
-            if (_loc3_["Binder"] && _loc3_["Component"]) {
+            if (_loc3_["Lua"]) {
                 this.createFile(_loc3_);
                 return;
             }
