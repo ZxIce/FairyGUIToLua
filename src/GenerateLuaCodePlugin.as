@@ -1,5 +1,4 @@
 package {
-import com.adobe.utils.StringUtil;
 
 import fairygui.editor.plugin.ICallback;
 import fairygui.editor.plugin.IFairyGUIEditor;
@@ -14,7 +13,7 @@ import flash.filesystem.File;
 import flash.filesystem.FileMode;
 import flash.filesystem.FileStream;
 
-import mx.utils.StringUtil;
+import fairygui.editor.plugin.IEditorUIProject;
 
 public final class GenerateLuaCodePlugin implements IPublishHandler {
     public static const FILE_MARK:String = "--This is an automatically generated class by FairyGUI. Please do not modify it.";
@@ -67,8 +66,8 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
         var oldFiles:Array = null;
         var file:File = null;
         var fileContent:String = null;
-        var project:Object = publishData['_project'];
-        this.projectSettings = project.settingsCenter.publish;
+        var project:IEditorUIProject = _editor.project;
+        this.projectSettings = project.getSettings("publish");
         try {
             //path = this.projectSettings.codePath;
             path = _editor.project.basePath+"/Scripts";
@@ -122,7 +121,7 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
 
     protected function loadTemplate(param1:String):void {
         var _loc3_:Object = null;
-        var project:Object = publishData['project'];
+        var project:IEditorUIProject = _editor.project;
         var _loc2_:File = new File(project.basePath + "/template/" + param1);
         if (_loc2_.exists) {
             _loc3_ = this.loadTemplate2(_loc2_);
@@ -224,7 +223,6 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
             classContext = classContext + "--\t<CODE-USERAREA>{user_area}\n" + "--\t</CODE-USERAREA>{user_area}\n";
             /*binderRequire.push("require('"+ className +"')")
             binderContent.push("fgui.register_extension(" + className + ".URL, " + className + ");");*/
-
             UtilsFile.saveString(new File(packageFolder.nativePath + File.separator + className + ".lua"), FILE_MARK + "\n\n" + classContext);
         }
 
@@ -282,8 +280,8 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
     }
 
     private function getLogFilePath():String {
-        var project:Object = publishData['_project'];
-        this.projectSettings = project.settingsCenter.publish;
+        var project:IEditorUIProject = _editor.project;
+        this.projectSettings = project.getSettings("publish");
         var path:String = this.projectSettings.codePath;
         return UtilsStr.formatStringByName(path, project.customProperties) + "/log.txt";
     }

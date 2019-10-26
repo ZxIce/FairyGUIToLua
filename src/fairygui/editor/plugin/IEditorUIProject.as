@@ -26,6 +26,10 @@ package fairygui.editor.plugin
 		 */
 		function get customProperties():Object;
 		/**
+		 * 获取配置信息
+		 */
+		function getSettings(name:String):Object;
+		/**
 		 * 保存项目更改
 		 */
 		function save():void;
