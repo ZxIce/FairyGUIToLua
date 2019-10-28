@@ -4,10 +4,7 @@ import fairygui.editor.plugin.ICallback;
 import fairygui.editor.plugin.IFairyGUIEditor;
 import fairygui.editor.plugin.IPublishData;
 import fairygui.editor.plugin.IPublishHandler;
-import fairygui.editor.publish.gencode.GenCodeUtils;
-import fairygui.editor.utils.PinYinUtil;
-import fairygui.editor.utils.UtilsFile;
-import fairygui.editor.utils.UtilsStr;
+import fairygui.editor.publish.FileTool;
 
 import flash.filesystem.File;
 import flash.filesystem.FileMode;
@@ -70,8 +67,8 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
         this.projectSettings = project.getSettings("publish");
         try {
             //path = this.projectSettings.codePath;
-            path = _editor.project.basePath+"/Scripts";
-            path = UtilsStr.formatStringByName(path, project.customProperties);
+            path = _editor.project.basePath+"\\Scripts";
+          //  path = UtilsStr.formatStringByName(path, project.customProperties);
             targetFolder = new File(project.basePath).resolvePath(path);
             if (!targetFolder.exists) {
                 targetFolder.createDirectory();
@@ -87,7 +84,7 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
             stepCallback.callOnFail();
             return;
         }
-        this.packageName = PinYinUtil.toPinyin(publishData.targetUIPackage.name, false, false, false);
+        this.packageName = publishData.targetUIPackage.name;
         this.packageFolder = new File(targetFolder.nativePath + File.separator + this.packageName + "_Lua");
         if (!this.projectSettings.packageName || this.projectSettings.packageName.length == 0) {
             this.packagePath = this.packageName;
@@ -99,17 +96,14 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
             oldFiles = this.packageFolder.getDirectoryListing();
             for each(file in oldFiles) {
                 if (!(file.isDirectory || file.extension != fileExtName)) {
-                    fileContent = UtilsFile.loadString(file);
-                    if (UtilsStr.startsWith(fileContent, FILE_MARK)) {
-                        UtilsFile.deleteFile(file);
-                    }
+                    fileContent = FileTool.readFileByFile(file);
                 }
             }
         }
         else {
             this.packageFolder.createDirectory();
         }
-        GenCodeUtils.prepare(publishData);
+        //GenCodeUtils.prepare(publishData);
         this.sortedClasses.length = 0;//清空数组
         for each(var classInfo:Object in publishData.outputClasses) {
             if (classInfo.superClassName == "GComponent") {
@@ -143,7 +137,7 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
         for each(_loc4_ in _loc2_) {
             if (_loc4_.extension == "template") {
                 _loc5_ = _loc4_.name.replace(".template", "");
-                _loc3_[_loc5_] = UtilsFile.loadString(_loc4_);
+                _loc3_[_loc5_] = FileTool.readFileByFile(_loc4_);
             }
         }
         return _loc3_;
@@ -223,7 +217,8 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
             classContext = classContext + "--\t<CODE-USERAREA>{user_area}\n" + "--\t</CODE-USERAREA>{user_area}\n";
             /*binderRequire.push("require('"+ className +"')")
             binderContent.push("fgui.register_extension(" + className + ".URL, " + className + ");");*/
-            UtilsFile.saveString(new File(packageFolder.nativePath + File.separator + className + ".lua"), FILE_MARK + "\n\n" + classContext);
+            FileTool.writeFile(packageFolder.nativePath + File.separator + className + ".lua",FILE_MARK + "\n\n" + classContext);
+          //  UtilsFile.saveString(new File(packageFolder.nativePath + File.separator + className + ".lua"), FILE_MARK + "\n\n" + classContext);
         }
 
         /*binderName = packageName + "Binder";
@@ -283,7 +278,7 @@ public final class GenerateLuaCodePlugin implements IPublishHandler {
         var project:IEditorUIProject = _editor.project;
         this.projectSettings = project.getSettings("publish");
         var path:String = this.projectSettings.codePath;
-        return UtilsStr.formatStringByName(path, project.customProperties) + "/log.txt";
+        return path + "/log.txt";
     }
 }
 }

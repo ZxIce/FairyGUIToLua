@@ -8,6 +8,9 @@
             <entry library-id="7caeab9b-4889-4d06-b3bf-cd48d040ac28">
               <dependency linkage="External" />
             </entry>
+            <entry library-name="libs" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="flex_sdk_4.6" />
         </dependencies>
@@ -37,5 +40,6 @@
         <jarDirectory url="file://$MODULE_DIR$/libs" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" exported="" name="libs" level="project" />
   </component>
 </module>
