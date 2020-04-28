@@ -1,0 +1,6 @@
+{className} = fgui.extension_class(GComponent);
+{className}.URL = "{uiPath}";
+
+function {className}:ctor()
+{content}
+end
