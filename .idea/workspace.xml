@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26100c8c-efef-4443-ad64-c7b7aa179b92" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/binder_template.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component_template.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/flexCompiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FairyGUIToLua.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FairyGUIToLua.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/FairyGUI-as3.swc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FairyGUIToLua/FairyGUIToLua.swc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GenerateLuaCodePlugin.as" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlugInMain.as" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fairygui/editor/plugin/ICallback.as" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fairygui/editor/plugin/IEditorUIPackage.as" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fairygui/editor/plugin/IEditorUIProject.as" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fairygui/editor/plugin/IFairyGUIEditor.as" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fairygui/editor/plugin/IMenuBar.as" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fairygui/editor/plugin/IPublishData.as" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fairygui/editor/plugin/IPublishHandler.as" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fairygui/editor/publish/FileTool.as" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/Lua/Binder.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/Lua/Component.template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620656595923</updated>
-      <workItem from="1620656603486" duration="418000" />
+      <workItem from="1620656603486" duration="1015000" />
     </task>
     <servers />
   </component>
