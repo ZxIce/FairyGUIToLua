@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="26100c8c-efef-4443-ad64-c7b7aa179b92" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/binder_template.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component_template.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/flexCompiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FairyGUIToLua.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FairyGUIToLua.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/FairyGUI-as3.swc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FairyGUIToLua/FairyGUIToLua.swc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerateLuaCodePlugin.as" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlugInMain.as" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fairygui/editor/plugin/ICallback.as" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fairygui/editor/plugin/IEditorUIPackage.as" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fairygui/editor/plugin/IEditorUIProject.as" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fairygui/editor/plugin/IFairyGUIEditor.as" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fairygui/editor/plugin/IMenuBar.as" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fairygui/editor/plugin/IPublishData.as" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fairygui/editor/plugin/IPublishHandler.as" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fairygui/editor/publish/FileTool.as" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/Lua/Binder.template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/Lua/Component.template" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1sLf3XlhCSqGUtMNMAuirhURCj0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26100c8c-efef-4443-ad64-c7b7aa179b92" name="Default Changelist" comment="" />
+      <created>1620656595923</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620656595923</updated>
+      <workItem from="1620656603486" duration="418000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

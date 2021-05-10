@@ -10,7 +10,7 @@ From Idea
      
      OnClick事件回调
      
-预告:此分支不添加新功能，即将支持FairyGUI2020版本(非全开源)
+FairyGUI2021版本
 
      功能:自定义绑定UI元素(非命名规则版本)
 
