@@ -2,7 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26100c8c-efef-4443-ad64-c7b7aa179b92" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/LuaAPI.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/UIProject.fairy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/assets/Package1/Component1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/assets/Package1/package.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/assets/demo/Button/Button.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/assets/demo/Button/images/button_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/assets/demo/Button/images/button_down@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/assets/demo/Button/images/button_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/assets/demo/Button/images/button_up@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/assets/demo/CustomArrangePanel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/assets/demo/Input/NumericInput.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/assets/demo/Input/input_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/assets/demo/Input/input_bg_grayed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/assets/demo/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/assets/demo/package.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/packages/Package1_fui.bytes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/packages/code/Package1/Package1Binder.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/packages/code/init.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/packages/demo_atlas0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/packages/demo_fui.bytes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/plugins/FairyGUIToLua/binder_template.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/plugins/FairyGUIToLua/component_template.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/plugins/FairyGUIToLua/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/plugins/FairyGUIToLua/main.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/plugins/FairyGUIToLua/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIProject/settings/Publish.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FairyGUIToLua.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FairyGUIToLua.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.lua" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,23 +52,18 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FairyGUI-Editor/plugin/LuaAPI.zip!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="26100c8c-efef-4443-ad64-c7b7aa179b92" name="Default Changelist" comment="" />
@@ -49,18 +72,21 @@
       <option name="presentableId" value="Default" />
       <updated>1620656595923</updated>
       <workItem from="1620656603486" duration="1015000" />
+      <workItem from="1620704169439" duration="7094000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -68,5 +94,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2290" y="227" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1620714097348">
+      <screen x="1920" y="-426" width="1080" height="1920" />
+    </state>
+    <state x="2290" y="227" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1040/1920.-426.1080.1920@1920.-426.1080.1920" timestamp="1620714097348" />
+    <state x="2175" y="274" key="FileChooserDialogImpl" timestamp="1620714096080">
+      <screen x="1920" y="-426" width="1080" height="1920" />
+    </state>
+    <state x="2175" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.-426.1080.1920@1920.-426.1080.1920" timestamp="1620714096080" />
+    <state x="1940" y="108" key="SettingsEditor" timestamp="1620714099769">
+      <screen x="1920" y="-426" width="1080" height="1920" />
+    </state>
+    <state x="1940" y="108" key="SettingsEditor/0.0.1920.1040/1920.-426.1080.1920@1920.-426.1080.1920" timestamp="1620714099769" />
   </component>
 </project>

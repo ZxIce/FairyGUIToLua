@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="ksz7f8mw">
+  <resources>
+    <component id="tec70" name="CustomArrangePanel.xml" path="/" exported="true"/>
+    <image id="tec71" name="background.png" path="/" exported="true" scale="9grid" scale9grid="11,8,192,115" qualityOption="source" duplicatePadding="true"/>
+    <component id="tec72" name="NumericInput.xml" path="/Input/" exported="true"/>
+    <image id="tec73" name="input_bg.png" path="/Input/" exported="true" scale="9grid" scale9grid="5,4,39,8" qualityOption="source" duplicatePadding="true"/>
+    <image id="tec74" name="input_bg_grayed.png" path="/Input/" exported="true" scale="9grid" scale9grid="5,4,31,8" qualityOption="source" duplicatePadding="true"/>
+    <component id="tec75" name="Button.xml" path="/Button/" exported="true"/>
+    <image id="tec76" name="button_up.png" path="/Button/images/" scale="9grid" scale9grid="10,6,65,11" duplicatePadding="true"/>
+    <image id="tec77" name="button_up@2x.png" path="/Button/images/" scale="9grid" scale9grid="15,13,135,26" duplicatePadding="true"/>
+    <image id="tec78" name="button_down.png" path="/Button/images/" scale="9grid" scale9grid="10,6,65,11" duplicatePadding="true"/>
+    <image id="tec79" name="button_down@2x.png" path="/Button/images/" scale="9grid" scale9grid="19,13,138,26" duplicatePadding="true"/>
+  </resources>
+  <publish name="" genCode="true"/>
+</packageDescription>

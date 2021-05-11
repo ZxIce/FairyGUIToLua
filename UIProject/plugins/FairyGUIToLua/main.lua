@@ -294,7 +294,7 @@ function genCode(handler)
 end
 function WriteOnClickFunc(_memberInfo)
     local str = ""
-    if  memberInfo.group == 0 then
+    if  _memberInfo.group == 0 then
         local funcName = _memberInfo.name .. "OnClickCallBack"
         str = str .. "function " .. funcName.."(self)\r\n" ..
                 "--\t<CODE-GENERATE>{" .. funcName .. "}\r\n" ..

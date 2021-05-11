@@ -1,0 +1,11 @@
+{
+	"name": "https://github.com/ZxIce/FairyGUIToLua",
+	"displayName": "FairyGUIToLua",
+	"description": "Publish lua code for game engine.",
+	"version": "1.0.0",
+	"author": {
+		"name": "Author: ZxIce"
+	},
+	"icon": "icon.png",
+	"main": "main.lua"
+}
